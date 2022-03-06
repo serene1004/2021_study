@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 아이콘 -->
+    <script src="./icons/fontawesome.js"></script>
+
+    <!-- jQuery 1.12.4 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo"><a href="javascript:void(0);" onclick="goUrl('Home')"><i class='fas fa-plane'></i></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" onclick="goUrl('Menu1')" class="main-btn">Menu-1</a>
+                        <div class="sub sub1">
+                            <ul>
+                                <li><a href="#" onclick="goUrl('Menu1-1')" class="sub-btn">SubMenu-1</a></li>
+                                <li><a href="#" onclick="goUrl('Menu1-2')" class="sub-btn">SubMenu-2</a></li>
+                                <li><a href="#" onclick="goUrl('Menu1-3')" class="sub-btn">SubMenu-3</a></li>
+                                <li><a href="#" onclick="goUrl('Menu1-4')" class="sub-btn">SubMenu-4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="goUrl('Menu2')" class="main-btn">Menu-2</a>
+                        <div class="sub sub2">
+                            <ul>
+                                <li><a href="#" onclick="goUrl('Menu2-1')" class="sub-btn">SubMenu-1</a></li>
+                                <li><a href="#" onclick="goUrl('Menu2-2')" class="sub-btn">SubMenu-2</a></li>
+                                <li><a href="#" onclick="goUrl('Menu2-3')" class="sub-btn">SubMenu-3</a></li>
+                                <li><a href="#" onclick="goUrl('Menu2-4')" class="sub-btn">SubMenu-4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="goUrl('Menu3')" class="main-btn">Menu-3</a>
+                        <div class="sub sub3">
+                            <ul>
+                                <li><a href="#" onclick="goUrl('Menu3-1')" class="sub-btn">SubMenu-1</a></li>
+                                <li><a href="#" onclick="goUrl('Menu3-2')" class="sub-btn">SubMenu-2</a></li>
+                                <li><a href="#" onclick="goUrl('Menu3-3')" class="sub-btn">SubMenu-3</a></li>
+                                <li><a href="#" onclick="goUrl('Menu3-4')" class="sub-btn">SubMenu-4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="goUrl('Menu4')" class="main-btn">Menu-4</a>
+                        <div class="sub sub4">
+                            <ul>
+                                <li><a href="#" onclick="goUrl('Menu4-1')" class="sub-btn">SubMenu-1</a></li>
+                                <li><a href="#" onclick="goUrl('Menu4-2')" class="sub-btn">SubMenu-2</a></li>
+                                <li><a href="#" onclick="goUrl('Menu4-3')" class="sub-btn">SubMenu-3</a></li>
+                                <li><a href="#" onclick="goUrl('Menu4-4')" class="sub-btn">SubMenu-4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="section1">
+                <div class="slide-container">
+                    <div class="slide-view">
+                        <ul class="slide-wrap">
+                            <li class="slide slide3"></li>
+                            <li class="slide slide0"></li>
+                            <li class="slide slide1"></li>
+                            <li class="slide slide2"></li>
+                            <li class="slide slide3"></li>
+                            <li class="slide slide0"></li>
+                        </ul>
+                        <span class="prev-btn-wrap"><a href="#" class="prev-btn"><i
+                                    class='fas fa-angle-left'></i></a></span>
+                        <span class="next-btn-wrap"><a href="#" class="next-btn"><i
+                                    class='fas fa-angle-right'></i></a></span>
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="box-wrap">
+                    <div class="left-box">
+                        <div class="notice-wrap">
+                            <div class="notice-title">
+                                <ul class="clearfix">
+                                    <li>
+                                        <h2 title="Notice">Notice</h2>
+                                    </li>
+                                    <li>
+                                        <span><a href="javascript:void(0);" onclick="goUrl('noticeMore')"
+                                                title="메뉴아이콘">+</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice-content">
+                                <ul>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="1978년에 브라이언 커니핸과 데니스 리치가 쓴 The C Programming Language 교재의 첫 번째 예제가 화면에">1978년에
+                                                브라이언 커니핸과 데니스 리치가 쓴 "The C Programming Language" 교재의 첫 번째 예제가
+                                                화면에</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="Hello, world!를 출력하는 것이었고, 이것이 유명해지면서 모든 프로그래밍 언어의 첫번째 예제로 굳어졌다.">"Hello,
+                                                world!"를 출력하는 것이었고, 이것이 유명해지면서 모든 프로그래밍 언어의 첫번째 예제로 굳어졌다.</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quia dolores aliquid ullam necessitatibus, dignissimos est sequi, veniam reiciendis quod nihil tempora. Voluptates officia numquam eaque blanditiis recusandae tenetur a.">Lorem
+                                                ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quia
+                                                dolores aliquid ullam necessitatibus, dignissimos est sequi, veniam
+                                                reiciendis quod nihil tempora. Voluptates officia numquam eaque
+                                                blanditiis recusandae tenetur a.</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹 의 핵심 마크업 언어이다.">HTML5는 HTML의
+                                                완전한 5번째 버전으로 월드 와이드 웹 의 핵심 마크업 언어이다.</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="종속형 시트 또는 캐스케이딩 스타일 시트(CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어">종속형 시트
+                                                또는 캐스케이딩 스타일 시트(CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="fugit maxime consequuntur quos assumenda odit illo. Asperiores, a alias optio ipsum nisi ipsa. Magni, saepe? Ipsum, delectus possimus.">fugit
+                                                maxime consequuntur quos assumenda odit illo. Asperiores, a alias optio
+                                                ipsum nisi ipsa. Magni, saepe? Ipsum, delectus possimus.</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#" class="notice-btn"
+                                                title="스타트업 컴퍼니 또는 스타트업은 설립한 지 오래되지 않은 신생 벤처기업을 뜻한다.">스타트업 컴퍼니 또는 스타트업은
+                                                설립한 지 오래되지 않은 신생 벤처기업을 뜻한다.</a></span>
+                                        <span>2021-02-17</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-box">
+                        <div class="gallery">
+                            <ul>
+                                <li>
+                                    <div class="gallery-img1"><a href="#" class="gallery-btn"></a></div>
+                                </li>
+                                <li>
+                                    <div class="gallery-img2"><a href="#" class="gallery-btn"></a></div>
+                                </li>
+                                <li>
+                                    <div class="gallery-img3"><a href="#" class="gallery-btn"></a></div>
+                                </li>
+                                <li>
+                                    <div class="gallery-img4"><a href="#" class="gallery-btn"></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-box"></div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="left-box"></div>
+            <div class="right-box">
+                <div class="top-box"></div>
+                <div class="bottom-box"></div>
+            </div>
+        </footer>
+    </div>
+    <div id="modal">
+        <div class="gap">
+            <div class="content">
+                <h1 class="notice-text"></h1>
+            </div>
+        </div>
+    </div>
+    <div id="modalGallery">
+        <div class="gap">
+            <div class="content">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./js/smile.js"></script>
+    <script src="./js/url.js"></script>
+</body>
+
+</html>

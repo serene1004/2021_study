@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* 박스블럭 중앙정렬 margin: 0 auto */
+
+#header {padding: 50px 0; background: #99c;}
+#main {padding: 50px 0; background: #9c9;}
+#footer {padding: 50px 0; background: #c9c;}
+h1 {font-size: 100px;text-align: center;}

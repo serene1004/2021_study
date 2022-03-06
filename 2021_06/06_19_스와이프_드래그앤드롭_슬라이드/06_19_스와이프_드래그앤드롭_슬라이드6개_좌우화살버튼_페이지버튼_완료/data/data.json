@@ -1,0 +1,11 @@
+{
+  "item":[
+    {"name":"이순신","age":39, "email":"moonseonjong@naver.com"},
+    {"name":"김유신","age":19, "email":"kimyoushin@naver.com"},
+    {"name":"류관순","age":29, "email":"ryugwansoon@naver.com"},
+    {"name":"세종대왕","age":33, "email":"sejongdaewang@naver.com"},
+    {"name":"김좌진","age":38, "email":"kimjowajin@naver.com"},
+    {"name":"김대중","age":41, "email":"kimdaejoong@naver.com"}
+  ]
+
+}

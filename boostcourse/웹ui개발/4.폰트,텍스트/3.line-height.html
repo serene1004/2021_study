@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>line-height</title>
+    <style>
+        .a {
+            width: 700px;
+        }
+
+        .parent {
+            width: 200px;
+            font-size: 10px;
+
+            line-height: normal;
+            line-height: 20px;
+            line-height: 2;
+            line-height: 200%;
+        }
+
+        .child {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>line-height 속성을 이용해 이 행간을 조정할 수 있다.<br>
+        정확하게 line-height는 줄의 높이를 의미하는 것이고, 이를 이용해서 행간을 조정할 수 있는 것</p>
+    <ul>
+        <h3>line-height 속성</h3>
+        <p>line-height는 텍스트 라인의 높이를 의미하는 것으로 주로 행간을 제어할 때 사용함</p>
+        <p>기본 값 : normal</p>
+        <p>line-height: normal | number | length | initial | inherit ;</p>
+        <img src="https://cphinf.pstatic.net/mooc/20180925_292/1537812871995OXjoa_PNG/1234.png" alt="" class="a">
+
+        <p>normal : 기본값으로 브라우저의 기본 속성을 따름<br>
+            number : font-size를 기준으로 설정한 숫자만큼 배율로 적용<br>
+            length : px, em 등 고정 수치로 할당할 수 있다<br>
+            % : font-size를 기준으로 설정한 퍼센트만큼 배율로 적용</p용>
+            <li>number <br>
+                부모 요소의 숫자 값이 그대로 상속됨 <br>
+                자식 요소에서도 또 한 번 자식 요소의 font-size를 기준으로 계산된 값을 가짐</li>
+            <li>% <br>
+                부모 요소에서 %값이 그대로 상속되는 것이 아니고, %에 의해 이미 계산된 px값이 상속됨</li>
+            <p>
+                body { font-size: 20px; line-height: 2; } /* line-height = 40px; */ <br>
+                body { font-size: 20px; line-height: 200%; } /* line-height = 40px; */ <br><br>
+
+                두 경우 모두 body에 똑같이 line-height: 40px이 적용되지만, 자식요소로 p가 있을경우에는<br><br>
+                    body { font-size: 20px; line-height: 2; } /* line-height = 40px; */ <br>
+                    p { font-size: 10px; } /* line-height = 20px; */<br>
+                    <br>
+                    body { font-size: 20px; line-height: 200%; } /* line-height = 40px; */ <br>
+                    p { font-size: 10px; } /* line-height = 40px; */ <br><br>
+                    계산된 값이 아닌 숫자 값을 상속하기 때문에, 숫자 값을 사용하면 부모 엘리먼트에서 계산된 값 대신 비율을 그대로 상속받을 수 있으므로,<br>
+                    가능하면 단위가 없는 값을 사용하는것이 좋다
+
+            </p>
+    </ul>
+    <div class="parent">
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam aspernatur vitae sapiente laudantium velit quo unde cupiditate autem,
+            harum eaque natus perferendis ducimus saepe libero, voluptatibus voluptates possimus.
+            Adipisci, delectus.
+        </div>
+    </div>
+</body>
+
+</html>

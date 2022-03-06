@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style>
+        div {
+            border-width: 10px;
+            border-style: solid;
+            border-color: #000;
+
+            /* 축약형 */
+            border: 10px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div> css border 속성 실습 </div>
+    <ul>
+        <h3>border 관련 속성</h3>
+        <li>border-width <br>
+            기본 값 : medium <br>
+            선의 굵기를 지정하는 속성으로 상하좌우 선의 굵기를 다르게 표현할 수 있다<br>
+            border-width: [top] [right] [bottom] [left];</li>
+            <p>키워드 : thin, medium, thick <br>
+            단위 : px, em, rem ... ( % , 정수 단위 사용불가 )</p>
+        <li>border-style <br>
+            기본 값 :  none <br>
+            선의 모양을 지정하는 속성으로 상하좌우 선의 모양을 다르게 표현할 수 있다 <br>
+            border-style: [top] [right] [bottom] [left];</li>
+            <p>none : border를 표시 하지 않음 <br>
+                solid : border를 실선 모양으로 나타냄 <br>
+                double : border를 이중 실선 모양으로 나타냄 <br>
+                dotted : border를 점선 모양으로 나타냄</p>
+        <li>border- color <br>
+            기본 값 : currentColor <br>
+            선의 색상을 지정하는 속성으로 상하좌우 선의 색상을 다르게 표현할 수 있다 <br>
+            border-color: [top] [right] [bottom] [left];</li><br>
+        <li>border 축약 <br>
+            border: [-width] [-style] [-color];<br>
+            공백으로 구분해 축약하여 사용할 수 있고, 정의되지 않은 속성값에 대해서는 기본값이 적용된다</li>
+    </ul>
+</body>
+
+</html>

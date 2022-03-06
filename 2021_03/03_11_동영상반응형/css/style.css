@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#wrap {width: 100%;}
+#wrap #section1 {width: 100%;}
+#wrap #section1 .wrap {width: 100%;}
+#wrap #section1 .wrap .gap {width: 100%;}
+#wrap #section1 .wrap .gap .container {width: 100%;overflow: hidden;}
+#wrap #section1 .wrap .gap .container .main-video {width: auto;height: auto;}

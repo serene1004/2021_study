@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float, clear</title>
+    <style>
+        .a {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .b {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .c {clear: both;}
+    </style>
+</head>
+
+<body>
+    <h2>float 속성</h2>
+    <p>요소를 float(요소를 보통의 흐름에서 벗어나게 함) 시킬지 지정하는 속성</p>
+    <p>기본 값 : none</p>
+    <p>none : float 시키지 않음(기본값) <br>
+        left : 좌측으로 float 시킴 <br>
+        right : 우측으로 float 시킴</p>
+    <p>주변 텍스트나 인라인 요소가 주위를 감싸는 특징이 있음</p>
+    <p>대부분 요소의 display 값을 block으로 변경함 (display 값 변경 예외: inline-table, flex 등)</p>
+    <div class="a">float</div>
+    <div class="b">float</div>
+    <div class="c"><h2>claer 속성</h2>
+    <p>요소를 floating 된 요소의 영향에서 벗어나게 하는 속성</p>
+    <p>기본 값 : none</p>
+    <p>none : 양쪽으로 floating 요소를 허용(기본값) <br>
+        left : 왼쪽으로 floating 요소를 허용하지 않음<br>
+        right : 오른쪽으로 floating 요소를 허용하지 않음<br>
+        both : 양쪽으로 floating 요소를 허용하지 않음</p>
+    <p>block-level 요소만 적용가능함</p></div>
+</body>
+
+</html>

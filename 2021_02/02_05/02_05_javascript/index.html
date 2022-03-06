@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wireframe</title>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 아이콘 -->
+    <script src="./icons/fontawesome.js"></script>
+    <link rel="stylesheet" href="./icons/css/font-awesome.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="wrap">
+                <div class="left-box">
+                    <a href="#"><i class="fas fa-cat" style="font-size:60px;" title="고양이로고"></i></a>
+                </div>
+                <div class="right-box">
+                    <nav>
+                        <ul class="main-btn-wrap clearfix">
+                            <li>
+                                <a href="#">
+                                    <span class="en" title="MENU-1">MENU-1</span>
+                                    <span class="ko" title="메뉴-1">메뉴-1</span>
+                                </a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="#" title="SubMenu-1">SubMenu-1</a></li>
+                                        <li><a href="#" title="SubMenu-2">SubMenu-2</a></li>
+                                        <li><a href="#" title="SubMenu-3">SubMenu-3</a></li>
+                                        <li><a href="#" title="SubMenu-4">SubMenu-4</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="sub-bg"></div> -->
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en" title="MENU-2">MENU-2</span>
+                                    <span class="ko" title="메뉴-2">메뉴-2</span>
+                                </a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="#" title="SubMenu-1">SubMenu-1</a></li>
+                                        <li><a href="#" title="SubMenu-2">SubMenu-2</a></li>
+                                        <li><a href="#" title="SubMenu-3">SubMenu-3</a></li>
+                                        <li><a href="#" title="SubMenu-4">SubMenu-4</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en" title="MENU-3">MENU-3</span>
+                                    <span class="ko" title="메뉴-3">메뉴-3</span>
+                                </a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="#" title="SubMenu-1">SubMenu-1</a></li>
+                                        <li><a href="#" title="SubMenu-2">SubMenu-2</a></li>
+                                        <li><a href="#" title="SubMenu-3">SubMenu-3</a></li>
+                                        <li><a href="#" title="SubMenu-4">SubMenu-4</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en" title="MENU-4">MENU-4</span>
+                                    <span class="ko" title="메뉴-4">메뉴-4</span>
+                                </a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="#" title="SubMenu-1">SubMenu-1</a></li>
+                                        <li><a href="#" title="SubMenu-2">SubMenu-2</a></li>
+                                        <li><a href="#" title="SubMenu-3">SubMenu-3</a></li>
+                                        <li><a href="#" title="SubMenu-4">SubMenu-4</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrap">
+                <section id="section1">
+                    <h2 class="hide">이미지 슬라이드</h2>
+
+                    <div class="slide-container">
+
+                        <div class="slide-view">
+
+                            <ul class="slide-wrap">
+                                <li class="slide slide0"></li>
+                                <li class="slide slide1"></li>
+                                <li class="slide slide2"></li>
+                                <li class="slide slide3"></li>
+                            </ul>
+
+                        </div>
+                        <!-- 화살버튼(이전, 다음 슬라이드 버튼) -->
+                        <span>
+                            <a href="#" class="prev-btn" title="이전슬라이드" onclick="prevSlideFn()">
+                                <!-- <i class='fas fa-angle-left' style='font-size:48px;'></i> -->
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#" class="next-btn" title="다음슬라이드" onclick="nextSlideFn()">
+                                <!-- <i class='fas fa-angle-right' style='font-size:48px;'></i> -->
+                            </a>
+                        </span>
+
+                    </div>
+
+                </section>
+
+                <section id="section2">
+                    <div class="content">
+                        <div class="left-box">
+                            <h2 class="hide">공지사항/갤러리</h2>
+                        </div>
+                        <div class="center-box">
+                            <h2 class="hide">배너</h2>
+                            <span class="page">1/4</span>
+                        </div>
+                        <div class="right-box">
+                            <h2 class="hide">바로가기</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="wrap">
+                <div class="left-box">
+                    <h2 class="hide">로고</h2>
+                </div>
+                <div class="right-box">
+                    <div class="content">
+                        <div class="top-box">
+                            <h2 class="hide">하단 메뉴</h2>
+                        </div>
+                        <div class="bottom-box">
+                            <h2 class="hide">Copyright</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script1.js"></script> -->
+</body>
+
+</html>

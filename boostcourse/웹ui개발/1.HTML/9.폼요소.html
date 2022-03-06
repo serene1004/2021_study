@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>폼요소</title>
+</head>
+
+<body>
+    <h2>폼 관련 요소(FORM)</h2>
+    <P>서버에 데이터를 전달하기 위한 요소들</P>
+    <h2>INPUT요소</h2>
+    <P>대표적인 폼 요소로, input은 내용이 없는 빈요소이며 다양한 type 속성으로 여러 종류의 입력 양식으로 나타난다.</P>
+    아이디 : <input type="text" placeholder="아이디를 입력하세요"><br>
+    비밀번호 : <input type="password"><br>
+    성별 : 남자<input type="radio" name="gender" checked> 여자<input type="radio" name="gender"><br>
+    취미 : 영화감상<input type="checkbox" name="hobboy"> 음악감상<input type="checkbox" name="hobboy"> 독서<input type="checkbox"
+        name="hobboy">
+    <p>type="text"는 아이디, 이름, 주소, 전화번호 등 단순한 텍스트를 입력할때 사용한다. <br>
+        placeholder속성(사용자가 입력 전 미리 화면에 노출하는 값)이 존재한다.</p>
+    <p>type="password"는 암호와 같이 공개할 수 없는 내용을 입력할 때 사용한다. <br>
+        화면에는 type="text"와 같이 나타나지만 실제로 입력할 때 값을 노출하진 않는다.</p>
+    <p>type="text"는 라디오 버튼을 만들 때 사용한다. <br>
+        라디오 버튼은 중복선택이 불가능하며 하나의 항목만을 선택해야 한다.</p>
+    <p>type="checkbox"는 체크박스를 만들때 사용한다. <br>
+        체크박스는 중복선택이 가능하다.</p>
+    <p>라디오 버튼과 체크박스에는 checked, name 속성이 존재한다.
+        checked 속성은 값이 별도로 존재하지 않는 boolean 속상이다. <br>
+        boolean 속성은 true/false 둘 중 하나의 값을 가지며 속성이 존재하면 true,
+        속성이 존재하지 않으면 false를 가진다. <br>
+        name 속성은 라디오 버튼과 체크박스를 그룹화시켜주는 속성이다.</p>
+</body>
+
+</html>

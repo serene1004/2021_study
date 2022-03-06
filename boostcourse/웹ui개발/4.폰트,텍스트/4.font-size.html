@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>font-size</title>
+    <style>
+        .parent {
+            font-size: 20px;
+        }
+
+        .child {
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <h3>font-size 속성</h3>
+        <p>기본 값 : medium</p>
+        <p>font-size: keyword | length | initial | inherit ;</p>
+        <p>keyword : medium(기본 값), xx-small, x-small, small, large, x-large, xx-large, smaller, larger <br>
+            length : px, em 등 고정 수치로 지정 <br>
+            % : 부모 요소의 font-size 기준의 퍼센트로 지정</p>
+        <li>absolute size (keyword) : 기본 값인 medium에 대한 상대적인 크기로, 브라우저마다 사이즈가 다르게 정의되어있다</li>
+        <li>relative size (keyword) : 부모 요소의 font-size 크기에 대해 상대적임. smaller는 0.8배, larger는 1.2배</li>
+        <li>length : px, em, rem 등의 단위를 이용하여 고정된 크기를 지정할 수 있음. - em : 부모 요소의 font-size에 em 값을 곱한 크기 - rem : 루트의
+            font-size에 rem 값을 곱한 크기</li>
+        <li>percent (%) 부모 요소의 font-size를 기준으로 백분율 계산된 값을 지정할 수 있음</li>
+        <li>viewport units vw, vh 단위로 뷰포트를 기준으로 하여, 유동적인 font-size를 지정할 수 있음. vw는 뷰포트 width의 1%, vh는 뷰포트 height의 1% 값을
+            가짐</li>
+    </ul>
+    <p>font-size에는 em 단위와 % 단위를 사용할 수 있다. <br>
+        둘 다 부모 요소의 font-size를 기준으로 그 값이 곱해지기 때문에 font-size 속성에서는 두 단위의 동작이 같아 보일 수 있지만<br>
+        다른 속성에서 이 단위들이 사용될 때는 그 기준이 명확하게 달라진다.</p>
+
+    <div class="parent">
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam aspernatur vitae sapiente laudantium velit quo unde cupiditate autem,
+            harum eaque natus perferendis ducimus saepe libero, voluptatibus voluptates possimus.
+            Adipisci, delectus.
+        </div>
+    </div>
+</body>
+
+</html>

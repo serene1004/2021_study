@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>font-style, variant</title>
+    <style>
+        .a {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>font-style 속성</h3>
+    <p>글꼴의 스타일을 지정하는 속성으로 기본값 : normal</p>
+    <p>font-style: normal | italic | oblique | initial | inherit;</p>
+    <p>normal : font-family 내에 분류된 기본 값 <br>
+        italic : italic 스타일로 표현<br>
+        oblique : 텍스트의 기울기에 대한 각도를 추가로 지정할 수 있음, 지정하지 않으면 14도</p>
+    <h3>font-variant 속성</h3>
+    <p>글꼴의 형태를 변형하는 속성으로 소문자를 작은 대문자로 변환할 수 있다.</p>
+    <p>font-variant: normal | small-caps | initial | inherit ;</p>
+    <p>normal : 기본값<br>
+        small-caps : 소문자를 작은 대문자로 변형</p>
+    <p class="a">Font-Variant: Small-Caps</p>
+
+    <h3>font 관련 속성</h3>
+    <p>font-style : font-style 지정, 기본 값은 normal <br>
+        font-variant : font-variant 지정, 기본 값은 normal<br>
+        font-weight : font-weight 지정, 기본 값은 normal<br>
+        font-size/line-height : font-size/line-height 지정, 기본 값은 normal<br>
+        font-family : font-family 지정</p>
+    <ul>
+        <p>축약형을 선언할때 유의할 것</p>
+        <li>font-size와 font-family는 반드시 선언해야 하는 필수 속성이다</li>
+        <li>빠진 속성이 있다면 기본 값으로 지정됨</li>
+        <li>각 속성의 선언 순서를 지켜야 함</li>
+    </ul>
+</body>
+
+</html>

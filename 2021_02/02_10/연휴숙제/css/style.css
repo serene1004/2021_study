@@ -1,0 +1,49 @@
+@charset "UTF-8";
+#wrap {width: 100%;height: 650px;}
+
+
+
+/* 헤더 */
+#wrap header {width: 200px;height: 100%;background:rgba(255, 255, 0, .2);float: left;}
+#wrap header .wrap {width: 200px;height: 100%;}
+
+#wrap header .wrap .top-box {width: 200px;height: 100px;background: rgba(255, 255, 0, .3);}
+#wrap header .wrap .bottom-box {width: 200px;height: 550px;background: rgba(0, 255, 255, .2);}
+
+/* 헤더 네비 */
+#wrap header .wrap .bottom-box nav {width: 100%;background: rgba(0, 255, 255, .2);}
+#wrap header .wrap .bottom-box nav .main-btn-wrap {width: 100%;}
+#wrap header .wrap .bottom-box nav .main-btn-wrap li {width: 180px;}
+#wrap header .wrap .bottom-box nav .main-btn-wrap li .sub1 {width: 180px;}
+#wrap header .wrap .bottom-box nav .main-btn-wrap li .sub2 ul li {display: none;}
+#wrap header .wrap .bottom-box nav .main-btn-wrap li .sub3 ul li {display: none;}
+#wrap header .wrap .bottom-box nav .main-btn-wrap li .sub4 ul li {display: none;}
+
+
+/* 메인푸터 묶음 */
+#wrap .mainfoot {float: left;}
+
+/* 메인 */
+#wrap main {width: 800px;height: 550px;background: rgba(0, 0, 255, .2);}
+#wrap main .wrap {width: 800px;height: 100%;}
+
+/* 메인섹션1 */
+#wrap main .wrap #section1 {width: 800px;height: 350px;}
+
+/* 메인섹션2 */
+#wrap main .wrap #section2 {width: 800px;height: 200px;}
+#wrap main .wrap #section2 .content {width: 800px;height: 200px;}
+#wrap main .wrap #section2 .content .left-box {width: 33.333%;height: 200px;background: rgba(0, 0, 255, .1);float: left;}
+#wrap main .wrap #section2 .content .center-box {width: 33.333%;height: 200px;background: rgba(0, 0, 255, .2);float: left;}
+#wrap main .wrap #section2 .content .right-box {width: 33.333%;height: 200px;background: rgba(0, 0, 255, .3);float: left;}
+
+
+
+/* 푸터 */
+#wrap footer {width: 800px;height: 100px;background: rgba(255, 0, 0, .2);}
+#wrap footer .wrap {width: 800px;height: 100px;}
+
+#wrap footer .wrap .left-box {width: 600px;height: 100px;float: left;}
+#wrap footer .wrap .right-box {width: 200px;height: 100px;background: rgba(255, 0, 0, .1);float: left;}
+#wrap footer .wrap .right-box .content .top-box{width: 200px;height: 50px;background: rgba(255, 0, 0, .1);}
+#wrap footer .wrap .right-box .content .bottom-box{width: 200px;height: 50px;background: rgba(255, 0, 0, .2);}

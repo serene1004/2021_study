@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>padding</title>
+    <style>
+        div {border: 1px solid #000;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+
+            /* 축약형 */
+            padding: 10px 20px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div> css padding 속성 실습 </div>
+    <ul>
+        <h3>padding 속성</h3>
+        <p>기본 값 : 0</p>
+        <li>length : 고정값으로 지정합니다. (ex. px, em ....)</li>
+        <li>percent : 요소의 width에 상대적인 크기를 지정</li>
+        <li>padding-top : content 영역의 위쪽 여백을 지정</li>
+        <li>padding-right : content 영역의 오른쪽 여백을 지정</li>
+        <li>padding-bottom : content 영역의 아래쪽 여백을 지정</li>
+        <li>padding-left : content 영역의 왼쪽 여백을 지정</li>
+    </ul>
+    <p>
+        padding: [-top] [-right] [-bottom] [-left]; <br>
+        0 10px 20px 30px /* 상, 우, 하, 좌 다름 */ <br>
+        0 10px 20px /* 좌, 우 같음 */ <br>
+        0 10px /* 상, 하 같음 & 좌, 우 같음 */ <br>
+        0 /* 상, 우, 하, 좌 모두 같음 */
+    </p>
+    <p>속성의 순서는 고정되어있으며, 위쪽을 기준으로 시계방향으로 돌아간다 <br>
+        상하, 좌우 영역의 값이 같을 때 하나로 합쳐서 적용할 수도 있다</p>
+    <p>참고 : CSS에서 0 값에 대해서는 단위를 따로 적지 않음</p>
+</body>
+
+</html>

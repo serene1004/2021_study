@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 박스블럭 중앙정렬 margin: 0 auto */
+
+/* 테이블 */
+table {margin: 0 auto;text-align: center;border-collapse: collapse;}
+/* table tr {} */
+table tr th,
+table tr td {border: 1px solid #ccc;height: 30px;font-size: 20px;width: 150px;}
+table tr th {background: rgba(0, 0, 255, .2);}
+

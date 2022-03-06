@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+#wrap {width: 100%;position: relative;z-index: 3;}
+#wrap #cube {width: 100%;}
+#wrap #cube .wrap {width: 100%;max-width: 1170px;margin: 0 auto;}
+#wrap #cube .wrap .gap {margin: 0 15px;}
+#wrap #cube .wrap .gap .container {width: 100%;}
+
+#wrap #cube .wrap .gap .container .title {text-align: center;padding:50px 0 40px 0;}
+#wrap #cube .wrap .gap .container .title h2 {font-size: 50px;letter-spacing: 3px;color: rgba(200, 200, 255, .5);text-shadow: 2px 4px 2px rgba(0, 0, 0, .3);font-family: 'Times New Roman', Times, serif;}
+
+#wrap #cube .wrap .gap .container .content {text-align: center;transform: perspective(800px);}
+
+#wrap #cube .wrap .gap .container .content input[type='radio'] {cursor: pointer;width: 15px;height: 15px;margin-right: 3px;border: 2px solid rgba(255, 255, 255, .7);appearance: none;outline: 0;transition: all .4s;}
+#wrap #cube .wrap .gap .container .content input[type='radio']:checked {background: rgba(200, 200, 255, 0.7);border-radius: 50%;}
+#wrap #cube .wrap .gap .container .content label {margin: 0 15px 0 0;font-size: 18px;color: rgba(255, 255, 255, .7);cursor: pointer;}
+
+/* CUBE 정육면체 */
+#wrap #cube .wrap .gap .container .content .cube {width: 400px;height: 400px;margin: 175px auto;position: relative;transform-style: preserve-3d;transform: perspective(800px) rotate3d(0, 0, 0, 0);transition: all 1s;}
+/* #wrap #cube .wrap .gap .container .content .cube:hover {transform: rotate3d(0, 1, 0, 180deg);} */
+#wrap #cube .wrap .gap .container .content .cube .face {width: 100%;height: 100%;color: #fff;text-align: center;font-size: 50px;line-height: 400px;position: absolute;background: url(../img/1.jpg) no-repeat 50% 50%;background-size: cover;outline: 2px solid #fff;outline-offset: -2px;opacity: .2;text-shadow: 4px 4px 2px rgba(0, 0, 0, .3);}
+
+#wrap #cube .wrap .gap .container .content .cube .front  {background-image: url(../img/bg8.jpg);transform: rotateY(0)      translateZ(200px);}
+#wrap #cube .wrap .gap .container .content .cube .left   {background-image: url(../img/bg7.jpg);transform: rotateY(-90deg) translateZ(200px);}
+#wrap #cube .wrap .gap .container .content .cube .back   {background-image: url(../img/bg6.jpg);transform: rotateY(180deg) translateZ(200px);}
+#wrap #cube .wrap .gap .container .content .cube .right  {background-image: url(../img/bg5.jpg);transform: rotateY(90deg)  translateZ(200px);}
+#wrap #cube .wrap .gap .container .content .cube .top    {background-image: url(../img/bg9.jpg);transform: rotateX(90deg)  translateZ(200px);}
+#wrap #cube .wrap .gap .container .content .cube .bottom {background-image: url(../img/bg3.jpg);transform: rotateX(-90deg) translateZ(200px);}
+
+/* 라디오버튼 체크 : 회전시 반대각도로 회전한다. rotate3d(x축, y축, z축, (deg)각도); */
+/* #wrap #cube .wrap .gap .container .content #front:checked ~ .cube  {transform:  perspective(800px) rotate3d(0, 1, 0,   0deg);}
+#wrap #cube .wrap .gap .container .content #left:checked ~ .cube   {transform:  perspective(800px) rotate3d(0, 1, 0,  90deg);}
+#wrap #cube .wrap .gap .container .content #back:checked ~ .cube   {transform:  perspective(800px) rotate3d(0, 1, 0,-180deg);}
+#wrap #cube .wrap .gap .container .content #right:checked ~ .cube  {transform:  perspective(800px) rotate3d(0, 1, 0, -90deg);}
+#wrap #cube .wrap .gap .container .content #top:checked ~ .cube    {transform:  perspective(800px) rotate3d(1, 0, 0, -90deg);}
+#wrap #cube .wrap .gap .container .content #bottom:checked ~ .cube {transform:  perspective(800px) rotate3d(1, 0, 0,  90deg);} */
+
+#wrap #cube .wrap .gap .container .content #front.addCheck  ~ .cube  {transform:  perspective(800px) rotate3d(0, 1,  1,   0deg);}
+#wrap #cube .wrap .gap .container .content #left.addCheck   ~ .cube  {transform:  perspective(800px) rotate3d(0, 1, .8,  90deg);}
+#wrap #cube .wrap .gap .container .content #back.addCheck   ~ .cube  {transform:  perspective(800px) rotate3d(0, 1, .3,-180deg);}
+#wrap #cube .wrap .gap .container .content #right.addCheck  ~ .cube  {transform:  perspective(800px) rotate3d(0, 1, .8, -90deg);}
+#wrap #cube .wrap .gap .container .content #top.addCheck    ~ .cube  {transform:  perspective(800px) rotate3d(1, 0, .7, -90deg);}
+#wrap #cube .wrap .gap .container .content #bottom.addCheck ~ .cube  {transform:  perspective(800px) rotate3d(1, 0, .7,  90deg);}

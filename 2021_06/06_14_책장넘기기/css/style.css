@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;vertical-align:top;border:0;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll;}
+ul{list-style:none;}
+
+.page-Wrap{width:100%;padding-top:100px;}
+	
+	.page-Wrap-ul{width:996px;height:646px;margin:0 auto;}
+	.page-Wrap-ul>li{width:498px;height:646px;}
+	.page-Wrap-ul>li>img{width:100%;}

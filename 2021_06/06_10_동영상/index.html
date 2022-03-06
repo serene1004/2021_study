@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <script src="./js/lib/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+
+    * {margin:0;padding:0;vertical-align:middle;}
+    html,body {width:100%;height:100%;}
+    html {overflow-y:scroll;}
+    body {font:normal 16px/1 'arial'}
+    ul,li {list-style:none;}
+    
+    #section1 {width:100%;height:969px;overflow:hidden; /* js */}
+    #section1 .wrap {width:100%;height:100%;position:relative;}
+    #section1 .wrap .main-video {width:1920px;height:1080px; /* js */position:relative;z-index:1;}
+
+    /* 재생 & 정지 */
+    #section1 .wrap .control-box {width:80px;height:80px;position:absolute;z-index:2;top:50%;left:50%;margin-top:-40px;margin-left:-40px;border-radius:50%;overflow:hidden;transform:scale(1);transition:all .3s;}
+    #section1 .wrap .control-box:hover {transform:scale(1.2);}
+    #section1 .wrap .control-box a {display:block;width:100%;height:100%;background:rgba(0,0,0, .7) url(./img/icon-player-pause.png) no-repeat 56% 50%;background-size:30px auto;text-indent:-1000px;overflow:hidden;transition:all .3s;}
+    #section1 .wrap .control-box:hover a {background-color:rgba(0,0,0, 1);}
+    #section1 .wrap .control-box.addPlay a {background-image:url(./img/icon-player-play.png)}
+    
+    /* 볼륨 */
+    #section1 .wrap .volume-box {width:50px;height:50px;position:absolute;z-index:2;bottom:10px;right:10px;background:rgba(0,0,0, .6);text-align:center;line-height:45px;}
+    #section1 .wrap .volume-box a {display:inline-block;color:rgba(255,255,255, 1);}
+    #section1 .wrap .volume-box a:active {color:rgba(255,255,255, .3);}
+    #section1 .wrap .volume-box a i {font-size:30px;}
+
+    
+    /* replay */
+    #section1 .wrap .replay-box {width:50px;height:50px;position:absolute;z-index:2;bottom:10px;right:61px;text-align:center;line-height:45px;}
+    #section1 .wrap .replay-box a {display:inline-block;color:rgba(255,255,255, 1);background:rgba(0,0,0, .6);width:100%;height:100%;}
+    #section1 .wrap .replay-box a:active {background:rgba(0,0,0, 1);color:rgba(255,255,255, .3);}
+    #section1 .wrap .replay-box a i {font-size:30px;}
+
+    /* xspeed */
+    #section1 .wrap .xspeed-box {width:80px;height:50px;position:absolute;z-index:2;bottom:11px;right:112px;line-height:50px;}
+    #section1 .wrap .xspeed-box select {width:100%;height:50px;color:#fff;font-size:14px;font-weight:500;padding:0 10px;background:rgba(0,0,0, .6);outline:0;border:0;text-align:center;}
+
+  </style>
+
+
+
+
+</head>
+<body>
+
+  <section id="section1">
+    <div class="wrap">
+      <!-- 동영상콘텐츠 -->
+      
+      <!-- <video class="main-video" autoplay loop muted playsinline> -->
+      <video class="main-video"  playsinline> <!-- js  콘트롤 -->
+        <source src="./video/main.mp4" type="video/mp4">
+      </video>
+
+      <span class="control-box">
+        <a href="#" class="play-btn">play</a> 
+      </span>
+
+
+
+
+      <div class="xspeed-box">
+        <form name="xspeed_form">
+          <select name="xspeed" id="xspeed">
+            <option value="0.5">x0.5</option>
+            <option value="0.75">x0.75</option>
+            <option value="1" selected>x1</option>
+            <option value="1.25">x1.25</option>
+            <option value="1.5">x1.5</option>
+            <option value="2">x2</option>
+            <option value="3">x3</option>
+            <option value="4">x4</option>
+            <option value="5">x5</option>
+          </select>
+        </form>
+      </div>
+
+      <span class="replay-box">
+        <a href="#" class="replay-btn"><i class="material-icons">replay</i></a> 
+      </span>
+
+      <span class="volume-box">
+        <a href="#" class="volume-btn"><i class='fa fa-volume-off'></i></a> 
+      </span>      
+      
+    </div>
+  </section>
+  <section id="section2">
+    <div class="wrap">
+      <!-- 구글맵 API -->
+
+
+    </div>
+  </section>
+  <section id="section3">
+    <div class="wrap">
+      <!-- 삼각함수 코사인 사인 응용한 회전 갤러리 -->
+
+
+    </div>
+  </section>
+  
+  <script src="./js/video.js"></script>
+
+</body>
+</html>
+
+<!-- fetch_promise.html -->

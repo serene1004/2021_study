@@ -1,0 +1,28 @@
+1번
+1. <br>
+2. <hr>
+3. <img>
+4. <meta>
+5.  <link>
+6.  <input>
+
+2번
+
+1. border="1"
+2. colspan="2"
+3. rowspan="3"
+4. rowspan="4"
+
+3번
+1. <label for="receiver">받는 사람 : </label> <input type="email" placeholder="aaa@naver.com" id="receiver">
+2. checkbox
+3. important
+4. cols="100" rows="30"
+5. type="reset"
+
+4번
+1. <footer></footer>
+2. <address></address>
+
+5번
+1. >span, span

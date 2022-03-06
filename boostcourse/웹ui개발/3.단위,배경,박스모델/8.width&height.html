@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>width&height</title>
+    <style>
+        .parent {
+            width: 300px;
+            border: 20px solid red;
+        }
+
+        .child {
+            width: 50%;
+            padding: 20px;
+            border: 10px solid black;
+        }
+
+        .pp {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+        }
+
+        .cc {
+            height: 50%;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>요소의 가로 크기를 지정하는 width 속성은 인라인 레벨 요소를 제외한 모든 요소에 적용</p>
+    <h3>width 속성</h3>
+    <p>기본 값 : 0</p>
+    <p>auto : 브라우저에 의해 자동으로 계산하여 적용<br>
+        length : 고정값으로 지정<br>
+        percent : 부모 요소의 width에 상대적인 크기를 지정</p>
+    <div class="parent">
+        <div class="child">
+            child
+        </div>
+    </div>
+    <h3>height 속성</h3>
+    <p>기본 값 : 0</p>
+    <p>auto : 브라우저에 의해 자동으로 계산하여 적용<br>
+        length : 고정값으로 지정<br>
+        percent : 부모 요소의 height에 상대적인 크기를 지정</p>
+    <div class="pp">
+        <div class="cc">
+            child
+        </div>
+    </div>
+</body>
+
+</html>

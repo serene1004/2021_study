@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="koi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>폼요소</title>
+</head>
+
+<body>
+    <form action="/2021/01/9.폼요소4.html">
+        <fieldset>
+            <legend>기본정보</legend>
+        <label for="userid">아이디 :</label> <input type="text" placeholder="아이디를 입력하세요" id="userid"><br>
+        <label for="userpw">비밀번호 :</label> <input type="password" id="userpw"><br>
+        성별 : <label for="male">남자</label><input type="radio" name="gender" checked id="male">
+        <label for="female">여자</label><input type="radio" name="gender" id="female"><br>
+    </fieldset>
+    <fieldset>
+        <legend>부가정보</legend>
+        취미 : 영화감상<input type="checkbox" name="hobboy"> 음악감상<input type="checkbox" name="hobboy"> 독서<input
+            type="checkbox" name="hobboy">
+        </fieldset>
+    </form>
+    <p>label은 form요소의 이름과 form 요소를 연결시켜주기 위함으로 웹 접근성 향상에 도움이 된다.(필수적)<br>
+    모든 form 요소에 사용할 수 있다. <br>
+    form 요소의 id 속성값과 label의 for 속성값을 같게 적어주어야 합니다.</p>
+    
+    <p>fieldset : 여러 개의 폼 요소를 그룹화하여 구조적으로 만들기 위해 사용</p>
+    <p>legned : 폼 요소의 제목으로 fieldset 요소 내부에 작성</p>
+    
+    <p>form은 form요소들을 감싸는 태그로 데이터를 그룹화하여 서버에 전송하는 역할을 하는 태그이다. <br>
+    만약 fieldset으로 구조화 되어있다면 fieldset도 함께 감싸는 역할을 한다.</p>
+    <p>action : 폼 데이터를 처리하기 위한 서버의 주소</p>
+    <p>method : 데이터를 전송하는 방식을 지정(get, post)</p>
+    <p>get 방식은 데이터가 전송될 때 주소창에 데이터가 노출이 된다.</p>
+    <p>post 방식은 데이터가 전송될 때 데이터가 노출되지 않는다.</p>
+</body>
+
+</html>

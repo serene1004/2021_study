@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style>
+        .parent {
+            z-index: 10;
+            position: relative;
+            width: 300px;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #ccc;
+        }
+
+        .child {
+            z-index: 10;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>z-index 속성</h2>
+    <p>요소가 겹치는 순서(쌓임 순서 또는 stack order)를 지정하는 속성</p>
+    <p>기본 값 : auto</p>
+    <p>auto : 쌓임 순서를 부모와 동일하게 설정(기본값) <br>
+        number : 해당 수치로 쌓임 순서를 설정(음수 허용)</p>
+    <ul>
+        <li>position 값이 static이 아닌 경우 지정가능</li>
+        <li>순서 값이 없을 경우 생성순서(코드상 순서)에 따라 쌓임</li>
+        <li>부모가 z-index 값이 있을 경우 부모 안에서만 의미있음</li>
+        <li>큰 값이 가장 위쪽(음수 사용 가능)</li>
+    </ul>
+
+    <div class="wrap">
+
+        <h1 class="practive_title">z-index 속성</h1>
+        <div class="z_area">
+            <div class="parent" style="z-index:11">
+                position: relative;
+                <div class="child" style="right:20px;z-index:1000;">
+                    position: absolute;
+                </div>
+            </div>
+            <div class="parent">
+                position: relative;
+                <div class="child">
+                    position: absolute;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
